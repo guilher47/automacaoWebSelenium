@@ -7,12 +7,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.io.IOException;
 import java.time.Duration;
 
-public class GooglePage {
+public class ShoppingPage {
 
     protected WebDriver driver;
     Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 
-    public GooglePage(WebDriver driver){
+    public ShoppingPage(WebDriver driver){
         this.driver = driver;
     }
 

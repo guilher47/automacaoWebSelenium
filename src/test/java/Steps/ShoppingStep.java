@@ -1,6 +1,6 @@
 package Steps;
 
-import Pages.GooglePage;
+import Pages.ShoppingPage;
 import Suporte.AbrirNavegadorChrome;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -11,15 +11,15 @@ import org.openqa.selenium.WebDriver;
 
 import java.io.IOException;
 
-public class GoogleStep {
+public class ShoppingStep {
 
-    GooglePage page;
+    ShoppingPage page;
     protected WebDriver driver;
 
     @Before
     public void setup(){
         driver = AbrirNavegadorChrome.abrirChrome();
-        page = new GooglePage(driver);
+        page = new ShoppingPage(driver);
     }
 
     @Dado("que eu acesse o site do ecommerce")
